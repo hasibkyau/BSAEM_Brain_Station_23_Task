@@ -6,6 +6,8 @@
   box-sizing: border-box;
 }
 
+
+/* Elements */
 html {
   font-size: 1.5rem;
   font-family:'Inter';
@@ -20,24 +22,202 @@ body{
 
 }
 
-
 div{
     margin: 0;
     padding: 0;
 }
 
-/* section {
-    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
-    background: #121212;
-} */
 
-*{
-    margin:0;
-    padding:0;
+.card{
+    background: #222331;
+    /* shadow */
+    box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    width: 437px;
+    height: 254px;
+    padding: 0;
+}
+.card-header{
+    /* margin-top: 40px; */
     font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    /* identical to box height, or 125% */
+
+    text-align: center;
+    letter-spacing: 0.1px;
+
+    color: #FFFFFF;
+}
+
+.card-title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    /* identical to box height, or 125% */
+
+    text-align: center;
+    letter-spacing: 0.1px;
+
+    color: #FFFFFF;
+}
+
+.card-text{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+    
+    text-align: center;
+    letter-spacing: 0.2px;
+    
+    color: #858585;
+}
+
+.btn {
+    /* button */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 25px;
+    /* identical to box height, or 147% */
+    
+    letter-spacing: 0.2px;
+    
+    /* light text */
+    width: 203.28px;
+    height: 65px;
+    
+    color: #FFFFFF;
+}
+
+.column{
+    display:inline-block;
+    margin:5px 20px;
+    padding:5px;
+    border:1px solid #CCC;
+}
+
+.footer-link{
+    text-decoration: none;
 }
 
 
+/* Blocks */
+
+
+.toggle-container {
+    width: 1000px;
+    margin: 10px auto;
+  
+  }
+  
+  .toggle-container:after{
+      content:'';
+      display: block;
+      clear: both;
+    }
+    
+  .toggle-button {
+      transition: all 0.2s ease;
+      display: block;
+      cursor: pointer;
+      float: left;
+  
+      color: #FFFFFF;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+  
+      background: transparent;
+      border-bottom: 3px solid #FFFFFF;
+      border-left: none;
+      border-right: none;
+      border-top: none;
+      padding: 5px 10px;
+      outline: none;
+      margin: 10px;
+  
+  }
+  
+  .toggle-button:focus {  
+      color: #007FDB;
+      border-bottom: 3px solid #007FDB;
+    }
+  
+  .toggle-button:active{
+      color: #007FDB;
+      border-bottom: 3px solid #007FDB;
+  }
+  
+  .toggle-content {
+    width: 70%;
+    margin: 20px auto;
+    /* padding: 20px; */
+    text-align: center;
+  }
+  
+  .content {
+    display: none;
+    /* padding: 20px; */
+  
+  }
+  .content:active{
+      display: block;
+  }
+
+  .navbar{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    /* background: #121212; */
+    /* color: #FFFFFF;  */
+    margin-top: 20px;
+}
+
+
+.navbar__link {
+    float:right;
+}
+
+.navbar__title{
+    text-decoration: none;
+    font-weight:700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-weight:500;
+    font-size: 17px;
+    line-height: 24px;
+    color: #FFFFFF;
+    float:right;
+    margin-left: 64px;
+}
+
+.nav-link:hover{
+    color: #FFFFFF;
+}
+
+.nav-link:focus {  
+    font-weight: 800;
+    color: #FFFFFF;  
+    font-size: 20px;
+  }
+
+
+
+  
 /* Modifier */
 .bg_effect{
     position: absolute;
@@ -163,50 +343,6 @@ div{
 
 
 
-.navbar{
-    position: sticky;
-    top: 0;
-    z-index: 2;
-    /* background: #121212; */
-    /* color: #FFFFFF;  */
-    margin-top: 20px;
-}
-
-
-.navbar__link {
-    float:right;
-}
-
-.navbar__title{
-    text-decoration: none;
-    font-weight:700;
-    font-size: 20px;
-    line-height: 24px;
-    color: #FFFFFF;
-}
-
-.nav-link{
-    text-decoration: none;
-    font-weight:500;
-    font-size: 17px;
-    line-height: 24px;
-    color: #FFFFFF;
-    float:right;
-    margin-left: 64px;
-}
-
-.nav-link:hover{
-    color: #FFFFFF;
-}
-
-.nav-link:focus {  
-    font-weight: 800;
-    color: #FFFFFF;  
-    font-size: 20px;
-  }
-
-
-
 
 
 .logo {
@@ -244,23 +380,6 @@ div{
 }
 
 
-.btn {
-    /* button */
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 17px;
-    line-height: 25px;
-    /* identical to box height, or 147% */
-    
-    letter-spacing: 0.2px;
-    
-    /* light text */
-    width: 203.28px;
-    height: 65px;
-    
-    color: #FFFFFF;
-}
 
 
 
@@ -269,126 +388,4 @@ div{
 
 
 
-.toggle-container {
-  width: 1000px;
-  margin: 10px auto;
-
-}
-
-.toggle-container:after{
-    content:'';
-    display: block;
-    clear: both;
-  }
-  
-.toggle-button {
-    transition: all 0.2s ease;
-    display: block;
-    cursor: pointer;
-    float: left;
-
-    color: #FFFFFF;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-
-    background: transparent;
-    border-bottom: 3px solid #FFFFFF;
-    border-left: none;
-    border-right: none;
-    border-top: none;
-    padding: 5px 10px;
-    outline: none;
-    margin: 10px;
-
-
-}
-.toggle-button:focus {  
-    color: #007FDB;
-    border-bottom: 3px solid #007FDB;
-  }
-
-.toggle-button:active{
-    color: #007FDB;
-    border-bottom: 3px solid #007FDB;
-}
-
-.toggle-content {
-  width: 70%;
-  margin: 20px auto;
-  /* padding: 20px; */
-  text-align: center;
-}
-
-.content {
-  display: none;
-  /* padding: 20px; */
-
-}
-.content:active{
-    display: block;
-}
-
-
-
-.card{
-    background: #222331;
-    /* shadow */
-    box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
-    border-radius: 10px;
-    width: 437px;
-    height: 254px;
-    padding: 0;
-}
-.card-header{
-    /* margin-top: 40px; */
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 30px;
-    /* identical to box height, or 125% */
-
-    text-align: center;
-    letter-spacing: 0.1px;
-
-    color: #FFFFFF;
-}
-
-.card-title{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 30px;
-    /* identical to box height, or 125% */
-
-    text-align: center;
-    letter-spacing: 0.1px;
-
-    color: #FFFFFF;
-}
-
-.card-text{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    /* or 150% */
-    
-    text-align: center;
-    letter-spacing: 0.2px;
-    
-    color: #858585;
-}
-
-
-
-.column{
-    display:inline-block;
-    margin:5px 20px;
-    padding:5px;
-    border:1px solid #CCC;
-}
 
