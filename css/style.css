@@ -14,7 +14,12 @@ html {
 body{
     color: #FFFFFF;
     background: #121212;
+    /* overflow: hidden;  */
+    overflow-x: hidden;
+    width: 100%; /* restrict the page width to viewport */
+
 }
+
 
 div{
     margin: 0;
@@ -31,9 +36,7 @@ div{
     padding:0;
     font-family: 'Inter';
 }
-body{
-    background: #121212;
-}
+
 
 /* Modifier */
 .bg_effect{
@@ -51,26 +54,26 @@ body{
     z-index: -1
 }
 
+.bg_effect--top{
+    left: calc(50% - 1309px/2 + 544.5px);
+    top: -766px;
+}
+
+.bg_effect--bottom{
+    left: calc(50% - 1309px/2 - 300.5px);
+    top: 4321px;  
+}
+
 .bg_effect--left{
-    /* position: absolute; */
-    width: 1309px;
-    height: 1332px;
-    left: calc(50% - 1309px/2 - 720.5px);
-    /* top: 4821px; */
-    
-    /* Primary blue */
-    
-    background: #007FDB;
-    opacity: 0.3;
-    filter: blur(250px);
-    z-index: -1
+    left: calc(50% - 1309px/2 - 659.5px);
+    top: 1360px;
 }
 
 .bg_effect--right{
-    left: calc(50% - 1309px/2 + 544.5px);
-    top: -766px;
-    z-index: -1
+    left: calc(50% - 1309px/2 + 758.5px);
+    top: 2722px;
 }
+
 
 .title {
     font-weight: 700;
@@ -114,6 +117,25 @@ body{
     /* or 150% */
     
     letter-spacing: 0.2px;
+}
+
+.text--logo{
+    font-size:25px; 
+    float:left
+}
+
+.text--footer{
+    /* Team */
+    display: inline;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    margin-right: 106px;
+
+    /* White */
+
+    color: #FFFFFF;
 }
 
 .text--heading{
@@ -224,19 +246,22 @@ body{
 
 .btn {
     /* button */
-
-    /* Auto layout */
-
-    /* display: flex;
-    flex-direction: row; */
-    justify-content: center;
-    align-items: center;
-    padding: 10px 30px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 25px;
+    /* identical to box height, or 147% */
+    
+    letter-spacing: 0.2px;
+    
+    /* light text */
     width: 203.28px;
     height: 65px;
-    /* left: 501px; */
-    /* top: 511px; */
+    
+    color: #FFFFFF;
 }
+
 
 
 
@@ -360,31 +385,10 @@ body{
 
 
 
-
-
-
-
-.banner-container{
-    background-color: brown;
+.column{
+    display:inline-block;
+    margin:5px 20px;
+    padding:5px;
+    border:1px solid #CCC;
 }
 
-.banner-column{
-    background-color: yellow;
-}
-
-.education-container{
-    background-color: turquoise;
-}
-
-.circle{
-    height: 150px;
-    width: 150px;
-    background-color: tomato;
-    margin: auto;
-}
-
-
-
-.inner-form{
-    background-color:rgb(78, 78, 78);
-}
